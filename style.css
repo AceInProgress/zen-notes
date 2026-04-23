@@ -1,0 +1,19 @@
+/* 1. The Global Settings */
+body {
+  background-color: #1e1e1e; /* A dark charcoal color */
+  color: #d1d1d1;           /* Light gray text (easier on eyes) */
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+}
+
+/* 2. Styling the Textarea */
+textarea {
+  width: 80%;
+  height: 300px;
+  background: transparent;
+  color: #00ff41;           /* "Matrix" green text */
+  border: 1px solid #333;
+  padding: 20px;
+  display: block;
+  margin: 20px auto;        /* Centers it */
+}
