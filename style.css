@@ -1,6 +1,7 @@
 /* 1. The Global Settings */
 body {
   background-color: #1e1e1e; /* A dark charcoal color */
+  cursor: crosshair;
   color: #d1d1d1;           /* Light gray text (easier on eyes) */
   font-family: 'JetBrains Mono', monospace;
   margin: 0;
