@@ -14,3 +14,23 @@ clearBtn.addEventListener('click', () => {
   textField.value = ""; // This sets the text box to be empty
 });
 });
+// 1. Set the date we're counting down to
+const targetDate = new Date("May 25, 2026").getTime();
+
+// 2. Create a function that runs every second
+const countdown = setInterval(() => {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  // 3. Math to calculate days
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  // 4. Put the result in your "days-to-go" ID
+  document.getElementById("days-to-go").innerText = days + " days until May 25th";
+
+  // If the countdown is finished
+  if (distance < 0) {
+    clearInterval(countdown);
+    document.getElementById("days-to-go").innerText = "IT'S GO TIME!";
+  }
+}, 1000);
