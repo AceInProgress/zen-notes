@@ -7,4 +7,10 @@ themeBtn.addEventListener('click', () => {
   document.body.style.backgroundColor = "#ffffff";
   document.body.style.color = "#000000";
   alert("Theme switched!");
+  const clearBtn = document.querySelector('#clear-btn');
+const textField = document.querySelector('textarea');
+
+clearBtn.addEventListener('click', () => {
+  textField.value = ""; // This sets the text box to be empty
+});
 });
